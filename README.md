@@ -77,7 +77,3 @@ MVVM
 | `BLUETOOTH_CONNECT` | Управление Bluetooth (API 31+) |
 | `ACCESS_FINE_LOCATION` | Чтение SSID для исключения домашней сети |
 | `RECEIVE_BOOT_COMPLETED` | Автозапуск после перезагрузки |
-
-## Лицензия
-
-MIT
