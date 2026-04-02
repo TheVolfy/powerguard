@@ -46,7 +46,7 @@ class MainActivity : ComponentActivity() {
         val activity = this
         setContent {
             PowerGuardTheme {
-                var showBirthday by remember { mutableStateOf(!BirthdayPrefs.isShown(activity)) }
+                var showBirthday by remember { mutableStateOf(BirthdayPrefs.shouldShow(activity)) }
                 val navController = rememberNavController()
                 val navBackStackEntry by navController.currentBackStackEntryAsState()
                 val currentDestination = navBackStackEntry?.destination
