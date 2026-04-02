@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <!-- Exclude DataStore and Room — restored state could be stale -->
+    <exclude domain="file" path="datastore/" />
+    <exclude domain="database" path="powerguard.db" />
+</full-backup-content>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PowerGuard</string>
+
+    <!-- Навигация -->
+    <string name="nav_dashboard">Главная</string>
+    <string name="nav_features">Функции</string>
+    <string name="nav_log">Журнал</string>
+    <string name="nav_settings">Настройки</string>
+
+    <!-- Главная -->
+    <string name="monitoring_label">Мониторинг</string>
+    <string name="monitoring_off">Выключен — автоматизация не активна.</string>
+    <string name="monitoring_paused_until">Приостановлен до %1$s</string>
+    <string name="monitoring_active">Контролируется функций: %1$d</string>
+    <string name="btn_resume_now">Возобновить</string>
+    <string name="btn_pause_1h">Пауза на 1 ч</string>
+    <string name="btn_configure">Настроить функции</string>
+    <string name="stats_title">Статистика</string>
+    <string name="stats_events">Событий в журнале: %1$d</string>
+    <string name="stats_rules">Активных правил: %1$d</string>
+    <string name="permissions_needed">Требуются разрешения</string>
+    <string name="all_permissions_granted">Все разрешения выданы</string>
+    <string name="btn_grant">Разрешить</string>
+
+    <!-- Разрешения -->
+    <string name="perm_write_settings">Изменение системных настроек</string>
+    <string name="perm_write_settings_rationale">Требуется для управления автоповоротом и яркостью экрана.</string>
+    <string name="perm_notifications">Отправка уведомлений</string>
+    <string name="perm_notifications_rationale">Требуется для предупреждений и уведомлений со ссылками на настройки.</string>
+    <string name="perm_dnd">Доступ к «Не беспокоить»</string>
+    <string name="perm_dnd_rationale">Необязательно. Позволяет переключать звонок в режим полной тишины (а не только вибрации).</string>
+    <string name="perm_bt_control">Управление Bluetooth</string>
+    <string name="perm_bt_state">Чтение состояния Bluetooth</string>
+    <string name="perm_bt_control_rationale">Позволяет PowerGuard отключать Bluetooth на API 31–32.</string>
+    <string name="perm_bt_state_rationale">На API 33+ Bluetooth управляется только через Настройки. Разрешение нужно для чтения состояния.</string>
+    <string name="perm_location">Геолокация (необязательно)</string>
+    <string name="perm_location_rationale">Необязательно. Нужно для чтения SSID подключённой сети (исключение «домашний Wi-Fi»).</string>
+
+    <!-- Список функций -->
+    <string name="features_title">Функции</string>
+    <string name="features_subtitle">Нажмите на функцию, чтобы настроить тайм-аут и исключения.</string>
+    <string name="control_direct">Прямое</string>
+    <string name="control_assisted">Уведомление</string>
+    <string name="control_conditional">Зависит от API</string>
+    <string name="timeout_label">Тайм-аут: %1$d мин</string>
+    <string name="automation_off">Автоматизация выключена</string>
+
+    <!-- Детали функции -->
+    <string name="label_enable">Включить автоматизацию</string>
+    <string name="label_enable_sub">Активировать правило тайм-аута для этой функции.</string>
+    <string name="label_timeout">Тайм-аут бездействия</string>
+    <string name="label_warn">Предупреждать заранее</string>
+    <string name="label_warn_unit">мин (0 = без предупреждения)</string>
+    <string name="label_min">мин</string>
+    <string name="exceptions_title">Исключения</string>
+    <string name="except_charging">Пропустить при зарядке</string>
+    <string name="except_charging_sub">Не выполнять действие, пока устройство заряжается.</string>
+    <string name="except_home_wifi">Пропустить в домашней сети</string>
+    <string name="except_home_wifi_sub">Требуется разрешение геолокации и сохранённый SSID в Настройках.</string>
+    <string name="except_time_window">Пропустить в период времени</string>
+    <string name="except_time_window_sub">Не выполнять действие в указанный промежуток времени.</string>
+    <string name="window_start">Начало периода</string>
+    <string name="window_end">Конец периода</string>
+    <string name="overnight_note">Ночные периоды работают (например, 22:00 → 07:00).</string>
+    <string name="restore_section_title">Восстановление при разблокировке</string>
+    <string name="label_restore_on_unlock">Включать обратно при разблокировке</string>
+    <string name="label_restore_on_unlock_sub">Если приложение отключило эту функцию, она будет автоматически восстановлена при разблокировке устройства.</string>
+    <string name="mode_direct">Прямое управление — приложение применяет изменение автоматически.</string>
+    <string name="mode_assisted">Уведомление — приложение отправляет уведомление со ссылкой на системные настройки.</string>
+    <string name="mode_conditional">Определяется во время выполнения — прямое на этом устройстве или через уведомление на API 33+.</string>
+
+    <!-- Журнал -->
+    <string name="log_restored_on_unlock">Восстановлено при разблокировке</string>
+    <string name="log_restored_reason">Пользователь разблокировал устройство — включено восстановление при разблокировке</string>
+    <string name="log_title">Журнал событий</string>
+    <string name="log_empty">Событий пока нет.\nВключите функцию и выключите экран.</string>
+    <string name="log_direct">Прямое</string>
+    <string name="log_assisted">Уведомление</string>
+
+    <!-- Настройки -->
+    <string name="settings_title">Настройки</string>
+    <string name="settings_language">Язык приложения</string>
+    <string name="lang_ru">Русский</string>
+    <string name="lang_en">English</string>
+    <string name="settings_home_wifi">SSID домашней сети Wi-Fi</string>
+    <string name="settings_home_wifi_desc">При подключении к этой сети применяется исключение «домашний Wi-Fi». Для чтения SSID необходимо разрешение геолокации.</string>
+    <string name="settings_home_wifi_hint">Имя сети (SSID)</string>
+    <string name="settings_retention">Хранение журнала</string>
+    <string name="settings_days">%1$d дней</string>
+    <string name="settings_prune">Очистить сейчас</string>
+    <string name="settings_boot">Запуск при загрузке</string>
+    <string name="settings_boot_desc">Автоматически перезапускать службу мониторинга после перезагрузки устройства.</string>
+    <string name="settings_device_info">Информация об устройстве</string>
+    <string name="settings_api_level">Уровень API Android: %1$d</string>
+    <string name="settings_bt_direct">Bluetooth: прямое управление (API ≤32)</string>
+    <string name="settings_bt_assisted">Bluetooth: только через уведомление (API 33+)</string>
+    <string name="btn_save">Сохранить</string>
+
+    <!-- Названия функций -->
+    <string name="feature_auto_rotate">Авто-поворот</string>
+    <string name="feature_auto_rotate_desc">Блокировать поворот экрана при выключенном дисплее.</string>
+    <string name="feature_brightness">Яркость экрана</string>
+    <string name="feature_brightness_desc">Уменьшать яркость при бездействии.</string>
+    <string name="feature_auto_brightness">Авто-яркость</string>
+    <string name="feature_auto_brightness_desc">Переключаться в ручной режим яркости при бездействии.</string>
+    <string name="feature_media_volume">Громкость медиа</string>
+    <string name="feature_media_volume_desc">Отключать звук медиа при бездействии.</string>
+    <string name="feature_ringer">Режим звонка</string>
+    <string name="feature_ringer_desc">Переключаться в режим вибрации (или тишины при наличии доступа к «Не беспокоить») при бездействии.</string>
+    <string name="feature_bluetooth">Bluetooth</string>
+    <string name="feature_bluetooth_desc">Выключать Bluetooth. Прямое управление на API ≤32; через уведомление на API 33+.</string>
+    <string name="feature_wifi">Wi-Fi</string>
+    <string name="feature_wifi_desc">Напоминание отключить Wi-Fi. Android 10+ запрещает прямое переключение.</string>
+    <string name="feature_nfc">NFC</string>
+    <string name="feature_nfc_desc">Напоминание отключить NFC. Публичный API для переключения отсутствует.</string>
+
+    <!-- Уведомления (контекст сервиса) -->
+    <string name="notif_channel_monitoring">Статус мониторинга</string>
+    <string name="notif_channel_monitoring_desc">Постоянный индикатор работы PowerGuard.</string>
+    <string name="notif_channel_warnings">Предупреждения автоматизации</string>
+    <string name="notif_channel_warnings_desc">Отправляется перед отключением функции.</string>
+    <string name="notif_active_title">PowerGuard активен</string>
+    <string name="notif_paused_title">PowerGuard приостановлен</string>
+    <string name="notif_status_paused">Приостановлен — нажмите, чтобы открыть</string>
+    <string name="notif_status_monitoring">Мониторинг активен (экран выключен)</string>
+    <string name="notif_status_waiting">Ожидание выключения экрана…</string>
+    <string name="notif_btn_resume">Возобновить</string>
+    <string name="notif_btn_pause">Пауза на 1 ч</string>
+    <string name="notif_warning_title">PowerGuard: %1$s будет отключена</string>
+    <string name="notif_warning_text">Действие через ~%1$d мин. Нажмите, чтобы открыть приложение.</string>
+    <string name="notif_assisted_title">%1$s всё ещё включён(а)</string>
+    <string name="notif_assisted_text">Нажмите, чтобы открыть настройки %1$s и отключить вручную.</string>
+</resources>

@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.powerguard.app-mergeDebugResources-58:/values-v30/values-v30.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Volfy\\.gradle\\caches\\8.9\\transforms\\81949e65245d23361494fb185eab590f\\transformed\\material3-release\\res\\values-v30\\values-v30.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "72",
+                        "endOffsets": "123"
+                    }
+                }
+            ]
+        }
+    ]
+}

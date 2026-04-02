@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Compose handles theming; this minimal theme satisfies the manifest reference -->
+<resources>
+    <style name="Theme.PowerGuard" parent="android:Theme.Material.Light.NoActionBar" />
+</resources>
