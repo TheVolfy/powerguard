@@ -1,113 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+    Adaptive icon foreground — 108×108 dp canvas.
+    Safe zone: circle r≈33 centred at (54,54), i.e. x/y between ~21 and ~87.
+    All content is kept well within that circle so no clipping occurs.
+-->
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
     android:width="108dp"
     android:height="108dp"
     android:viewportWidth="108"
     android:viewportHeight="108">
 
-    <!--
-        Classic heater-shield path, centered in safe zone (18–90).
-        Shield spans roughly x:16–92, y:12–98.
-        The top has the characteristic curved indentation at the centre.
-    -->
-
-    <!-- Shadow layer: same shield shifted (+3,+3), light gray fill -->
+    <!-- Shadow: same shield shifted (+3,+3), medium-gray -->
     <group
-        android:translateX="3"
-        android:translateY="3">
+        android:translateX="2.5"
+        android:translateY="2.5">
         <path
-            android:fillColor="#C8C8C8"
+            android:fillColor="#BBBBBB"
             android:pathData="
-                M54,14
-                C 42,12 18,20 16,28
-                L 16,60
-                C 16,80 33,92 54,98
-                C 75,92 92,80 92,60
-                L 92,28
-                C 90,20 66,12 54,14 Z" />
+                M54,22
+                C 44,20 22,27 21,34
+                L 21,62
+                C 21,78 36,88 54,94
+                C 72,88 87,78 87,62
+                L 87,34
+                C 86,27 64,20 54,22 Z" />
     </group>
 
-    <!-- Main shield — white fill -->
+    <!-- Shield — light gray fill so it shows against the white background -->
     <path
-        android:fillColor="#FFFFFF"
+        android:fillColor="#EAEAEA"
         android:pathData="
-            M54,14
-            C 42,12 18,20 16,28
-            L 16,60
-            C 16,80 33,92 54,98
-            C 75,92 92,80 92,60
-            L 92,28
-            C 90,20 66,12 54,14 Z" />
+            M54,22
+            C 44,20 22,27 21,34
+            L 21,62
+            C 21,78 36,88 54,94
+            C 72,88 87,78 87,62
+            L 87,34
+            C 86,27 64,20 54,22 Z" />
 
-    <!-- Main shield — thick black outline -->
-    <path
-        android:fillColor="#00000000"
-        android:strokeColor="#1A1A1A"
-        android:strokeWidth="4"
-        android:pathData="
-            M54,14
-            C 42,12 18,20 16,28
-            L 16,60
-            C 16,80 33,92 54,98
-            C 75,92 92,80 92,60
-            L 92,28
-            C 90,20 66,12 54,14 Z" />
-
-    <!-- ═══ Battery ═══ -->
-
-    <!-- Terminal nub (top, centered) -->
-    <path
-        android:fillColor="#1A1A1A"
-        android:pathData="
-            M47,22 Q47,20 49,20 L59,20 Q61,20 61,22 L61,27 L47,27 Z" />
-
-    <!-- Battery body — white fill -->
-    <path
-        android:fillColor="#FFFFFF"
-        android:pathData="
-            M37,26 Q37,24 39,24 L69,24 Q71,24 71,26 L71,79 Q71,81 69,81 L39,81 Q37,81 37,79 Z" />
-
-    <!-- Battery body — thick black outline -->
+    <!-- Shield outline -->
     <path
         android:fillColor="#00000000"
         android:strokeColor="#1A1A1A"
         android:strokeWidth="3.5"
         android:pathData="
-            M37,26 Q37,24 39,24 L69,24 Q71,24 71,26 L71,79 Q71,81 69,81 L39,81 Q37,81 37,79 Z" />
+            M54,22
+            C 44,20 22,27 21,34
+            L 21,62
+            C 21,78 36,88 54,94
+            C 72,88 87,78 87,62
+            L 87,34
+            C 86,27 64,20 54,22 Z" />
 
-    <!-- "+" symbol inside battery body (top area) -->
-    <!-- Horizontal bar -->
+    <!-- ═══ Battery ═══ -->
+
+    <!-- Terminal nub -->
     <path
         android:fillColor="#1A1A1A"
-        android:pathData="M49,31.5 L59,31.5 L59,34.5 L49,34.5 Z" />
-    <!-- Vertical bar -->
-    <path
-        android:fillColor="#1A1A1A"
-        android:pathData="M52.5,28.5 L55.5,28.5 L55.5,37.5 L52.5,37.5 Z" />
+        android:pathData="M48,27 Q48,25 50,25 L58,25 Q60,25 60,27 L60,31 L48,31 Z" />
 
-    <!-- Horizontal fill bars inside battery (6 bars, bottom bar is the largest) -->
+    <!-- Body — white fill -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M38,30 Q38,28 40,28 L68,28 Q70,28 70,30 L70,77 Q70,79 68,79 L40,79 Q38,79 38,77 Z" />
+
+    <!-- Body — outline -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#1A1A1A"
+        android:strokeWidth="3"
+        android:pathData="M38,30 Q38,28 40,28 L68,28 Q70,28 70,30 L70,77 Q70,79 68,79 L40,79 Q38,79 38,77 Z" />
+
+    <!-- "+" horizontal -->
+    <path android:fillColor="#1A1A1A"
+        android:pathData="M49,35 L59,35 L59,38 L49,38 Z" />
+    <!-- "+" vertical -->
+    <path android:fillColor="#1A1A1A"
+        android:pathData="M52.5,32 L55.5,32 L55.5,41 L52.5,41 Z" />
+
     <!-- Bar 1 -->
-    <path android:fillColor="#1A1A1A"
-        android:pathData="M40,40 L68,40 L68,44 L40,44 Z" />
+    <path android:fillColor="#1A1A1A" android:pathData="M41,43 L67,43 L67,46.5 L41,46.5 Z" />
     <!-- Bar 2 -->
-    <path android:fillColor="#1A1A1A"
-        android:pathData="M40,46 L68,46 L68,50 L40,50 Z" />
+    <path android:fillColor="#1A1A1A" android:pathData="M41,49 L67,49 L67,52.5 L41,52.5 Z" />
     <!-- Bar 3 -->
-    <path android:fillColor="#1A1A1A"
-        android:pathData="M40,52 L68,52 L68,56 L40,56 Z" />
+    <path android:fillColor="#1A1A1A" android:pathData="M41,55 L67,55 L67,58.5 L41,58.5 Z" />
     <!-- Bar 4 -->
-    <path android:fillColor="#1A1A1A"
-        android:pathData="M40,58 L68,58 L68,62 L40,62 Z" />
+    <path android:fillColor="#1A1A1A" android:pathData="M41,61 L67,61 L67,64.5 L41,64.5 Z" />
     <!-- Bar 5 -->
-    <path android:fillColor="#1A1A1A"
-        android:pathData="M40,64 L68,64 L68,68 L40,68 Z" />
+    <path android:fillColor="#1A1A1A" android:pathData="M41,67 L67,67 L67,70.5 L41,70.5 Z" />
     <!-- Bar 6 — solid bottom block -->
-    <path android:fillColor="#1A1A1A"
-        android:pathData="M40,70.5 L68,70.5 L68,77.5 L40,77.5 Z" />
+    <path android:fillColor="#1A1A1A" android:pathData="M41,73 L67,73 L67,76 L41,76 Z" />
 
-    <!-- "−" symbol below battery body, centred -->
-    <path
-        android:fillColor="#1A1A1A"
-        android:pathData="M49,83.5 L59,83.5 L59,86.5 L49,86.5 Z" />
+    <!-- "−" below body -->
+    <path android:fillColor="#1A1A1A"
+        android:pathData="M49,81 L59,81 L59,84 L49,84 Z" />
 
 </vector>
